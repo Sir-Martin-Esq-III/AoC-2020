@@ -14,8 +14,7 @@ def Main():
 def PartOne(min,max,Letter,pw):
     instanceCounter=0
     for cururentLetter in pw:
-        if cururentLetter==Letter:
-            instanceCounter+=1
+        instanceCounter+= int(cururentLetter==Letter)
     return int(min<=instanceCounter<=max)
 
 #Checks validation for part 2
